@@ -12,6 +12,8 @@ gemini_api_key = os.getenv("GEMINI_API_KEY")
 if not gemini_api_key:
     raise ValueError("GEMINI_API_KEY is not set. Please ensure it is defined in your .env file.")
 
+
+#decorator
 @cl.on_chat_start
 async def start(): 
 
