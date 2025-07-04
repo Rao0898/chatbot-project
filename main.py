@@ -2,8 +2,13 @@ import os
 from dotenv import load_dotenv
 from typing import cast
 import chainlit as cl
-from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel
-from agents.run import RunConfig 
+
+from agents.agent import Agent
+from agents.runner import Runner
+from agents.async_openai import AsyncOpenAI
+from agents.openai_chat_model import OpenAIChatCompletionsModel
+from agents.run import RunConfig
+
 
 load_dotenv()
 gemini_api_key = os.getenv("GEMINI_API_KEY")
