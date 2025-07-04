@@ -4,7 +4,8 @@ from typing import cast
 import chainlit as cl
 
 from agents.agent import Agent
-from agents.runner import Runner
+from agents.run import Runner
+
 from agents.async_openai import AsyncOpenAI
 from agents.openai_chat_model import OpenAIChatCompletionsModel
 from agents.run import RunConfig
